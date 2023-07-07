@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ecf2f6;
+    margin: 7%;
+    font-weight: 100;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-style: oblique;
+}
+
+#subtitulo {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    margin-left: 13%;
+    font-size: 35x;
+    margin-top: 5%;
+    font-style: oblique;
+}
+
+#check{
+    display: inline-block;
+}
+
+fieldset {
+    border: 0;
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,0.281),rgba(0,0,0,0.308)),url(ng.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: oblique;
+    background-repeat: no-repeat;
+    font-size: 1em;
+    color: #ffffff;
+    margin-left: 32%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #ecf2f6;
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+ 
+.campo input[type= "text"], .campo input[type= "email"] .campo select, .campotextarea{
+    padding: 0.2em;
+    border: 1px solid #e8e8e8;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+background: #4dcbae4f;
+}
+
+.btn-animation {
+    background-color: transparent;
+    border: none;
+    color: #e3e3e3;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  
+  .btn-animation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #504b4b;
+    box-sizing: border-box;
+    animation: btn-animation-border 2s linear infinite;
+  }
+  
+  @keyframes btn-animation-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) scale(2);
+      opacity: 0;
+    }
+  }
